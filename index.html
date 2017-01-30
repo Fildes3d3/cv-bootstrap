@@ -39,13 +39,13 @@
                         <p class="card-text text-center">
                         <ul class="nav nav-tabs justify-content-center" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#experience" role="tab">Experience</a>
+                                <a class="nav-link active" data-toggle="tab" href="#experience" role="tab" id="exp">Experience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#skills" role="tab">Skills</a>
+                                <a class="nav-link" data-toggle="tab" href="#skills" role="tab" id="skl">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#hobbies" role="tab">Hobbies</a>
+                                <a class="nav-link" data-toggle="tab" href="#hobbies" role="tab" id="hob">Hobbies</a>
                             </li>
                         </ul>
                         </p>
@@ -76,7 +76,7 @@
                         </p>
                         <hr>
                         <div class="tab-content">
-                            <div class="tab-pane active" id="experience" role="tabpanel">
+                            <div class="tab-pane active" tabindex="-1" id="experience" role="tabpanel">
                                 <h4 class="card-title text-center">Experience</h4>
                                 <p class="card-text">
                                     <strong>PHP Internship
@@ -85,7 +85,7 @@
                                     <em>
                                         Oct 2016 - present
                                     </em>
-                                    <p>
+                                    <p class="pl-5">
                                     <strong>PHP :</strong>
                                     -WEB Basics
                                     -PHP introduction
@@ -95,7 +95,7 @@
                                     -Coding Standards/Code Quality
                                     -Programming Environment Tools
                                     </p>
-                                    <p>
+                                    <p class="pl-5">
                                     <strong>Symfony:</strong>
                                     -Symfony3 - fundamentals
                                     -Bundles, Configuration and Enviroments
@@ -130,7 +130,7 @@
                                 </p>
                             </div>
 
-                            <div class="tab-pane" id="skills" role="tabpanel">
+                            <div class="tab-pane" tabindex="-1" id="skills" role="tabpanel">
                                 <h4 class="card-title text-center pb-4">Technologies &amp; Skills</h4>
                                 <div class="row">
                                     <div class="col-sm-4">
@@ -166,7 +166,7 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane mt-4" id="hobbies" role="tabpanel">
+                            <div class="tab-pane mt-4" tabindex="-1" id="hobbies" role="tabpanel">
                                 <h4 class="card-title text-center pb-4">Everybody's Got a Hobby</h4>
                                 <p class="card-text"> Motorcycles </p>
                                 <p class="card-text"> Home Automation </p>
@@ -207,5 +207,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+<script>
+    document.getElementById('exp').onclick = function () {
+        document.getElementById('experience').focus();
+    };
+    document.getElementById('skl').onclick = function () {
+        document.getElementById('skills').focus();
+    };
+    document.getElementById('hob').onclick = function () {
+        document.getElementById('hobbies').focus();
+    };
+</script>
 </body>
 </html>
