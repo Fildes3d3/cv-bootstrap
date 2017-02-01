@@ -35,21 +35,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-block">
-                        <p class="card-text text-center">
-                        <ul class="nav nav-tabs justify-content-center" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#experience" role="tab" id="exp">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#skills" role="tab" id="skl">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#hobbies" role="tab" id="hob">Hobbies</a>
-                            </li>
-                        </ul>
-                        </p>
-
+                    <div class="card-block pt-5">
                         <img src="img/pic.jpeg" class="img-fluid  rounded mx-auto d-block">
                         <h4 class="card-title text-center pt-4">Pop Adrian Bogdan</h4>
                         <p class="card-text text-center">
@@ -74,7 +60,19 @@
                             &nbsp;&nbsp;&nbsp;I am self-taught with interest in the following technologies:
                             <strong>PHP, Symphony, MySql, Bootstrap, HTML, CSS, JS, Git, Linux.</strong>
                         </p>
-                        <hr>
+                        <p class="card-text text-center">
+                        <ul class="nav nav-tabs justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#experience" role="tab" id="exp">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#skills" role="tab" id="skl">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#hobbies" role="tab" id="hob">Hobbies</a>
+                            </li>
+                        </ul>
+                        </p>
                         <div class="tab-content">
                             <div class="tab-pane active" tabindex="-1" id="experience" role="tabpanel">
                                 <h4 class="card-title text-center">Experience</h4>
@@ -207,17 +205,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-<script>
-    document.getElementById('exp').onclick = function () {
-        document.getElementById('experience').focus();
-    };
-    document.getElementById('skl').onclick = function () {
-        document.getElementById('skills').focus();
-    };
-    document.getElementById('hob').onclick = function () {
-        document.getElementById('hobbies').focus();
-    };
 
-</script>
 </body>
 </html>
